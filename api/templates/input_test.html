@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>기사요약</h2>    
+    <form action="/get_summary" method="POST">
+        <textarea name="sentences" style="width: 500px; height: 500px;"></textarea>
+        <button type="submit">확인</button>
+    </form>
+    <h2>형태소분석</h2>    
+    <form action="/get_tag" method="POST">
+        <textarea name="text" style="width: 500px; height: 500px;"></textarea>
+        <button type="submit">확인</button>
+    </form>
+    <h2>키워드 추출</h2>    
+    <form action="/get_keyword" method="POST">
+        <textarea name="text" style="width: 500px; height: 500px;"></textarea>
+        <button type="submit">확인</button>
+    </form>
+</body>
+</html>
