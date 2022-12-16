@@ -3,7 +3,7 @@ from flask.templating import render_template
 
 from predict_module import summarize_test
 from baikal_tagger import nlp_tagger
-from keyword_module import keysord_ext
+from keyword_module import keyword_ext
 from ner_module import ner_predict
 
 app = Flask(__name__)
