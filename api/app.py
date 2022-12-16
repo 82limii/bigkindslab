@@ -4,6 +4,7 @@ from flask.templating import render_template
 from predict_module import summarize_test
 from baikal_tagger import nlp_tagger
 from keyword_module import keysord_ext
+from ner_module import ner_predict
 
 app = Flask(__name__)
 app.config['JSON_AS_ASCII'] = False
@@ -28,11 +29,21 @@ def tag():
 
     return jsonify(response), 200
 
-# 형태소 분석 text : String , result : String Array    
+# 키워드 추출 text : String , result : String Array    
 @app.route("/get_keyword", methods=['POST'])
 def keyword(): # 키워드 추출
     test_context = request.form['text']
     rtn = keyword_ext(test_context)
+    response = dict()
+    response['result'] = rtn # 결과 문자열
+
+    return jsonify(response), 200
+
+#  text : String , result : String     
+@app.route("/get_ner", methods=['POST'])
+def ner(): # 개체명 인식
+    test_context = request.form['text']
+    rtn = ner_predict(test_context)
     response = dict()
     response['result'] = rtn # 결과 문자열
 

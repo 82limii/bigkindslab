@@ -1,3 +1,4 @@
+# %%
 from keyword_module import keyword_ext
 
 sample = '''
@@ -27,5 +28,7 @@ sample = '''
 
 대통령실 관계자는 통화에서 "현재는 가장 빠르고 정확하고 엄정한 진상규명에 집중하는 상황"이라며 "과실이 명확하게 드러날 경우 국가배상도 신속하게 논의될 수 있다"고 강조했다.
 '''
+
+sample = '대통령은 전날 한덕수 국무총리와의 피의자'
 sample_res = keyword_ext(sample)
 print(sample_res)
