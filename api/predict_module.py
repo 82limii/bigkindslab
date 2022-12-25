@@ -101,13 +101,10 @@ class MultiHeadedAttention(nn.Module):
     Multi-Head Attention module from
     "Attention is All You Need"
     :cite:`DBLP:journals/corr/VaswaniSPUJGKP17`.
-
     Similar to standard `dot` attention but uses
     multiple attention distributions simulataneously
     to select relevant items.
-
     .. mermaid::
-
        graph BT
           A[key]
           B[value]
@@ -128,9 +125,7 @@ class MultiHeadedAttention(nn.Module):
           E --> O
           F --> O
           B --> O
-
     Also includes several additional tricks.
-
     Args:
        head_count (int): number of parallel heads
        model_dim (int): the dimension of keys/values/queries,
@@ -162,7 +157,6 @@ class MultiHeadedAttention(nn.Module):
                 layer_cache=None, type=None, predefined_graph_1=None):
         """
         Compute the context vector and the attention vectors.
-
         Args:
            key (`FloatTensor`): set of `key_len`
                 key vectors `[batch, key_len, dim]`
@@ -174,7 +168,6 @@ class MultiHeadedAttention(nn.Module):
                  non-zero attention `[batch, query_len, key_len]`
         Returns:
            (`FloatTensor`, `FloatTensor`) :
-
            * output context vectors `[batch, query_len, dim]`
            * one of the attention vectors `[batch, query_len, key_len]`
         """
@@ -276,7 +269,6 @@ class MultiHeadedAttention(nn.Module):
 
 class PositionwiseFeedForward(nn.Module):
     """ A two-layer Feed-Forward-Network with residual layer norm.
-
     Args:
         d_model (int): the size of input for the first-layer of the FFN.
         d_ff (int): the hidden layer size of the second-layer
@@ -319,7 +311,7 @@ trainer = pl.Trainer(
     checkpoint_callback=checkpoint_callback,
     callbacks=[early_stopping_callback],
     max_epochs=N_EPOCHS,
-    gpus=1,
+    gpus=0,
 #     precision=16, #소스 수정 또는 패키지 재설치 필요... 런타임 에러.
     progress_bar_refresh_rate=30
 )
@@ -464,7 +456,7 @@ class Summarizer(pl.LightningModule):
 
 trained_model = Summarizer.load_from_checkpoint(
 #     trainer.checkpoint_callback.best_model_path
-    './checkpoints/best-checkpoint_all20.ckpt'
+    '/home/user/original_code/kpfbertsum/checkpoints/best-checkpoint_all.ckpt'
 )
 trained_model.eval()
 trained_model.freeze()
@@ -542,10 +534,13 @@ def summarize_test(text):
         rslt = idx
         
     summ = []
+    sum_i = []
     #print(' *** 입력한 문단의 요약문은 ...')
     res = ""
     for i, r in enumerate(rslt):
         summ.append(data['sents'][r])
+        sum_i.append(r)
         #print('[', i+1, ']', summ[i])
 
+    print(sum_i)
     return summ

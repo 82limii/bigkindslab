@@ -1,5 +1,6 @@
 # %%
-from ner_module import ner_predict
+# from ner_module import ner_predict
+from ner_module_kss import ner_predict
 
 sample = '''
 여야 원내대표가 16일 오후 김진표 국회의장 주재로 다시 얼굴을 맞대고 내년도 예산안 협상을 이어갔지만 기존 입장만 되풀이하며 진전을 보지 못했다.

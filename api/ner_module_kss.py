@@ -1,8 +1,8 @@
-# %%
 from transformers import AutoTokenizer
 from transformers import BertForTokenClassification, logging
 logging.set_verbosity_error()
 import sys
+import kss
 
 text = "러시아군이 5일 수도 크이우와 오데사, 크리비리흐, 수미 등 우크라이나 전역에 대규모 미사일 공격을 가했습니다. 이날은 주요 7개국(G7)과 호주, 유럽연합(EU)의 러시아산 원유 가격 상한제가 시행된 첫날이었는데요. 우크라이나에 따르면 러시아가 이날 우크라이나 전역에 발사한 미사일은 70발에 달합니다."
 
@@ -324,62 +324,69 @@ id2label = {i: label for label, i in label2id.items()}
 
 def ner_predict(text):
     model = kpf_model
+    text = text.replace('\n','')
+
+    sents = kss.split_sentences(text)
     
-    text = text.replace(" ", "-")
-    test_tokenized = tokenizer(text, return_tensors="pt")
-
-    test_input_ids = test_tokenized["input_ids"]
-    test_attention_mask = test_tokenized["attention_mask"]
-    test_token_type_ids = test_tokenized["token_type_ids"]
-
-    inputs = {
-        "input_ids" : test_input_ids,
-        "attention_mask" : test_attention_mask,
-        "token_type_ids" : test_token_type_ids
-    }
-
-    outputs = model(**inputs)
-    token_predictions = outputs[0].argmax(dim=2)
-    token_prediction_list = token_predictions.squeeze(0).tolist()
-
-    pred_str = [id2label[l] for l in token_prediction_list]
-    tt_tokenized = tokenizer(text).encodings[0].tokens
-
     decoding_ner_sentence = ""
-    is_prev_entity = False
-    prev_entity_tag = ""
-    is_there_B_before_I = False
-    for i, (token, pred) in enumerate(zip(tt_tokenized, pred_str)):
-        if i == 0 or i == len(pred_str) - 1:
-            continue
-        token = token.replace('#', '').replace("-", " ")
 
-        if 'B-' in pred:
-            if is_prev_entity is True:
-                decoding_ner_sentence += ':' + prev_entity_tag+ '>'
+    for sent in sents:
 
-            if token[0] == ' ':
-                token = list(token)
-                token[0] = ' <'
-                token = ''.join(token)
-                decoding_ner_sentence += token
-            else:
-                decoding_ner_sentence += '<' + token
-            is_prev_entity = True
-            prev_entity_tag = pred[2:]
-            is_there_B_before_I = True
+        sent = sent.replace(" ", "-")
+        test_tokenized = tokenizer(sent, return_tensors="pt")
 
-        elif 'I-' in pred:
-            decoding_ner_sentence += token
+        test_input_ids = test_tokenized["input_ids"]
+        test_attention_mask = test_tokenized["attention_mask"]
+        test_token_type_ids = test_tokenized["token_type_ids"]
 
-            if is_there_B_before_I is True:
+        inputs = {
+            "input_ids" : test_input_ids,
+            "attention_mask" : test_attention_mask,
+            "token_type_ids" : test_token_type_ids
+        }
+
+        outputs = model(**inputs)
+        token_predictions = outputs[0].argmax(dim=2)
+        token_prediction_list = token_predictions.squeeze(0).tolist()
+
+        pred_str = [id2label[l] for l in token_prediction_list]
+        tt_tokenized = tokenizer(sent).encodings[0].tokens
+
+        # decoding_ner_sentence = ""
+        is_prev_entity = False
+        prev_entity_tag = ""
+        is_there_B_before_I = False
+        for i, (token, pred) in enumerate(zip(tt_tokenized, pred_str)):
+            if i == 0 or i == len(pred_str) - 1:
+                continue
+            token = token.replace('#', '').replace("-", " ")
+
+            if 'B-' in pred:
+                if is_prev_entity is True:
+                    decoding_ner_sentence += ':' + prev_entity_tag+ '>'
+
+                if token[0] == ' ':
+                    token = list(token)
+                    token[0] = ' <'
+                    token = ''.join(token)
+                    decoding_ner_sentence += token
+                else:
+                    decoding_ner_sentence += '<' + token
                 is_prev_entity = True
-        else:
-            if is_prev_entity is True:
-                decoding_ner_sentence += ':' + prev_entity_tag+ '>' + token
-                is_prev_entity = False
-                is_there_B_before_I = False
-            else:
+                prev_entity_tag = pred[2:]
+                is_there_B_before_I = True
+
+            elif 'I-' in pred:
                 decoding_ner_sentence += token
+
+                if is_there_B_before_I is True:
+                    is_prev_entity = True
+            else:
+                if is_prev_entity is True:
+                    decoding_ner_sentence += ':' + prev_entity_tag+ '>' + token
+                    is_prev_entity = False
+                    is_there_B_before_I = False
+                else:
+                    decoding_ner_sentence += token
                 
     return decoding_ner_sentence
