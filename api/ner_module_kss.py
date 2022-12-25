@@ -388,5 +388,7 @@ def ner_predict(text):
                     is_there_B_before_I = False
                 else:
                     decoding_ner_sentence += token
-                
+
+    decoding_ner_sentence = decoding_ner_sentence.replace("&quot;", "\"")
+    decoding_ner_sentence = decoding_ner_sentence.replace("&apos;", "\'")
     return decoding_ner_sentence
