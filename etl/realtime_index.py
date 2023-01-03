@@ -85,5 +85,5 @@ class Handler(FileSystemEventHandler):
 if __name__ == '__main__': #본 파일에서 실행될 때만 실행되도록 함
     # 실제 디렉토리 경로
     # w = Target('/hadoop/newsml/data')
-    w = Target('../data')
+    w = Target('/bigdata/outsource')
     w.run()

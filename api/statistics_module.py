@@ -59,14 +59,14 @@ def basic_statis(key_list, df):
     for key in key_list:
         val_dict = dict()
         val_dict['key'] = key
-        val_dict['count'] = df.count()[key]
-        val_dict['sum'] = df.sum()[key]
-        val_dict['mean'] = df.mean()[key]
-        val_dict['min'] = df.min()[key]
-        val_dict['median'] = df.median()[key]
-        val_dict['max'] = df.max()[key]
-        val_dict['var'] = df.var()[key]
-        val_dict['std'] = df.std()[key]
+        val_dict['count'] = int(df.count()[key])
+        val_dict['sum'] = int(df.sum()[key])
+        val_dict['mean'] = float(df.mean()[key])
+        val_dict['min'] = int(df.min()[key])
+        val_dict['median'] = float(df.median()[key])
+        val_dict['max'] = int(df.max()[key])
+        val_dict['var'] = float(df.var()[key])
+        val_dict['std'] = float(df.std()[key])
         basic_res.append(val_dict)
     return basic_res
 
@@ -74,16 +74,17 @@ def basic_statis(key_list, df):
 def cor_statis(key_list, df):
     cor_res = []
     n = 0
-    for res in basic_res:
-        n += res['sum']
+    for key in key_list:
+        for val in df[key]:
+            n += val
     for key1 in key_list:
         for key2 in key_list:
             pear_cor = stats.pearsonr(df[key1], df[key2])
             cor_dict = dict()
             cor_dict['key1'] = key1
             cor_dict['key2'] = key2
-            cor_dict['Pearson'] = pear_cor[0]
-            cor_dict['pval'] = pear_cor[1]
+            cor_dict['Pearson'] = float(pear_cor[0])
+            cor_dict['pval'] = float(pear_cor[1])
             cor_dict['N'] = n
             cor_res.append(cor_dict)
     return cor_res
@@ -105,7 +106,7 @@ def scatter(df, key1, key2):
 # 회귀분석
 def regression(df, dep_nm):
     regre_res = dict()
-    regre_table_res = dict()
+    regre_table_res = []
 
     dep_val = ''  # 종속변수
     indep_val = ''  # 독립변수
@@ -131,18 +132,56 @@ def regression(df, dep_nm):
     regre_res['f_pval'] = f_pval
     regre_res['dw'] = dw
 
+    regre_table_res = []
+
+    b = model.params  # 비표준화계수 B
+    bse = model.bse  # 표준오차
+    tval = model.tvalues  # t
+    t_pval = model.pvalues  # 유의확률
+
+    col_arr = indep_val[1:].split("+")
+
+    for i in range(len(b)):
+        if i == 0:
+            continue
+        regre_table = dict()
+        regre_table['col'] = col_arr[i - 1]
+        regre_table['b'] = b[i]  # B
+        regre_table['bse'] = bse[i]  # 표준오차
+        regre_table['tval'] = tval[i]  # t
+        regre_table['t_pval'] = t_pval[i]  # 유의확률
+        regre_table_res.append(regre_table)
+
     return regre_table_res, regre_res
 
 
 if __name__ == "__main__":
-    key_list = ['대선', '국민의 힘', '윤석열']
+    key_list = ['대선', '국민의', '윤석열']
     res = keyword_cnt(key_list, '20220309', '20220410')
-    print(res)
+    print(type(res['dates']))
+    print(type(res['keywordCnt']))
     values_df = pd.DataFrame(res['keywordCnt'], index=res['dates'])
     basic_res = basic_statis(key_list, values_df)
     print(basic_res)
+    print(type(basic_res[0]['count']))
+    print(type(basic_res[0]['sum']))
+    print(type(basic_res[0]['mean']))
+    print(type(basic_res[0]['min']))
+    print(type(basic_res[0]['median']))
+    print(type(basic_res[0]['max']))
+    print(type(basic_res[0]['var']))
+    print(type(basic_res[0]['std']))
     cor_res = cor_statis(key_list, values_df)
+    # print(type(res))
+    # print(type(basic_res))
+    # print(type(cor_res))
     print(cor_res)
-    cord, lineRes = scatter(values_df, '대선', '국민의 힘')
-    print(cord)
-    print(lineRes)
+    print(type(cor_res[0]['Pearson']))
+    print(type(cor_res[0]['pval']))
+    print(type(cor_res[0]['N']))
+    # cord, lineRes = scatter(values_df, '대선', '국민의')
+    # print(cord)
+    # print(lineRes)
+    # regre_table_res, regre_res = regression(values_df, '대선')
+    # print(regre_res)
+    # print(regre_table_res)
