@@ -13,7 +13,7 @@ mysql_auth = auth_prop.mysql
 # log DB에서 불러오기
 # MySQL Connection 연결
 con = pymysql.connect(host=mysql_auth['host'], user=mysql_auth['user'], password=mysql_auth['passwd']
-                      , db=mysql_auth['db'], charset=mysql_auth['charset'])
+                      , db=mysql_auth['db'], charset=mysql_auth['charset'], port=mysql_auth['port'])
 
 # Connection 으로부터 Cursor 생성
 cur = con.cursor()

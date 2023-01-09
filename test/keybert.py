@@ -60,5 +60,3 @@ def mmr(doc_embedding, candidate_embeddings, words, top_n, diversity):
     return [words[idx] for idx in keywords_idx]
 
 keyword_arr = mmr(doc_embedding, candidate_embeddings, candidates, top_n=5, diversity=0.2)
-
-# keyword_arr 있는 내용 insert
