@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NewsML>
+	<Catalog Href="http://newsml.or.kr/topicset/MasterCatalog.xml" />
+	<NewsEnvelope>
+		<DateAndTime>20030904T175841+0900</DateAndTime>
+	</NewsEnvelope>
+	<NewsItem>
+		<Identification>
+			<NewsIdentifier>
+				<ProviderId>joongdoilbo.co.kr</ProviderId>
+				<DateId>20030904</DateId>
+				<NewsItemId>01400351.20030904085905019</NewsItemId>
+				<RevisionId PreviousRevision="0" Update="N">1</RevisionId>
+				<PublicIdentifier>joongdoilbo.co.kr:20030904:01400351.20030904085905019:1</PublicIdentifier>
+			</NewsIdentifier>
+		</Identification>
+		<NewsManagement>
+			<NewsItemType FormalName="News" />
+			<FirstCreated>20030904T175841+0900</FirstCreated>
+			<ThisRevisionCreated>20030904T085905+0900</ThisRevisionCreated>
+			<Status FormalName="Usable"/>
+			<StatusWillChange>
+				<FutureStatus FormalName="Usable" />
+				<DateAndTime>20030904T175841+0900</DateAndTime>
+			</StatusWillChange>
+			<Urgency FormalName="5" />
+		</NewsManagement>
+		<NewsComponent>
+			<Role FormalName="Main" />
+			<NewsLines>
+				<HeadLine><![CDATA[공공청사 시위에 ‘몸살’]]></HeadLine>
+								<SubHeadLine><![CDATA[]]></SubHeadLine>
+				
+								
+				<ByLine>김덕기</ByLine>
+				<DateLine>20030904T175841+0900</DateLine>
+				<CreditLine></CreditLine>
+				<CopyrightLine>CopyrightⓒJOONGDOILBO Co., Ltd All Right Reserved.</CopyrightLine>
+				<RightsLine></RightsLine>
+				<SeriesLine></SeriesLine>
+				<SlugLine></SlugLine>
+				<KeywordLine></KeywordLine>
+			</NewsLines>
+			<AdministrativeMetadata>
+				<FileName>01400351.20030904085905019.xml</FileName>
+				<Provider>
+					<Comment xml:lang="ko">중도일보</Comment>
+					<Party FormalName="01400351" />
+				</Provider>
+				<Creator>
+					<Party FormalName="001" >
+					<Property FormalName="Name" Value="김덕기" />
+					<Property FormalName="Title" Value="" />
+					<Property FormalName="Post" Value="" />
+					<Property FormalName="Email" Value="dgkim@joongdo.com" />
+					<Property FormalName="Blog" Value="" />
+					</Party>
+				</Creator>
+			</AdministrativeMetadata>
+			<DescriptiveMetadata>
+				<Language FormalName="ko" />
+				<Genre FormalName="Current" />
+				<SubjectCode>
+					<Subject FormalName="" />
+					<SubjectMatter FormalName="" />
+					<SubjectDetail FormalName="" />
+				</SubjectCode>
+				<DateLineDate>20030904</DateLineDate>
+				<Location HowPresent="Origin">
+					<Property FormalName="Country" Value="" />
+				</Location>
+			</DescriptiveMetadata>
+			<Metadata>
+				<Property FormalName="PublishDate" Value="20030904" />
+				<Property FormalName="PublisherCode" Value="" />
+				<Property FormalName="PaperEdition" Value="01" />
+				<Property FormalName="PageCategory" Value="" />
+				<Property FormalName="PageCategoryId" Value="" />
+				<Property FormalName="PrintingPage" Value="004" />
+				<Property FormalName="PrintingPageNo" Value="0" />
+				<Property FormalName="GenreInfo" Value="" />
+				<Property FormalName="KsOrgan" Value="null" />                                                        
+                <Property FormalName="KsCompany" Value="null" />                                                        
+                <Property FormalName="KsPeople" Value="null" />                                                        
+                <Property FormalName="UciCode" Value="G703:RA101-01400351.20030904085905019:1" />   
+				<Property FormalName="ModifyInfo" Value="" />
+				<Property FormalName="CharacterCounter" Value="812" />
+				<Property FormalName="NewsItemOrgId" Value="01400351.20030904109005950" />
+				<Property FormalName="LinkPage" Value="" />
+				<Property FormalName="LinkmPage" Value="" />
+				<Property FormalName="SubjectInfo" Value="인간적 흥미" />
+				<Property FormalName="SubjectInfo1" Value="" />
+				<Property FormalName="SubjectInfo2" Value="" />
+				<Property FormalName="SubjectInfo3" Value="" />
+				<Property FormalName="SubjectInfo4" Value="" />
+				<Property FormalName="MapSubjectInfo" Value="" />
+				<Property FormalName="AutoSubjectInfo" Value="지역,경남|지역,대전|사회,사회일반" />
+				<Property FormalName="AutoSubjectCode" Value="006000000,006003000|006000000,006007000|003000000,003010000" />
+				<Property FormalName="AutoKeywordInfo" Value="용두동,화강석,청사 외벽,관저동,노점상,집단행동,전시 청사,주민들,용두동 철거 주민들,용두동 철거" />
+				<Property FormalName="Latitude" Value="" />
+				<Property FormalName="Longitude" Value="" />
+				<Property FormalName="PageCoordinate" Value="" />
+				<Property FormalName="GroupCoordinate" Value="" />
+				<Property FormalName="ScrapPage" Value=""/>
+                <Property FormalName="ScrapCategoryId" Value=""/>
+				<Property FormalName="ScrapCoordinate" Value="" />
+				<Property FormalName="ScrapPdfFileName" Value=""/>
+			</Metadata>
+			<NewsComponent>
+				<Role FormalName="Main" />
+				<ContentItem>
+					<MediaType FormalName="Text"/>
+					<MimeType FormalName="text/plain" />
+					<DataContent><![CDATA[지자체 공공청사가 각종 시위 등으로 수난을 겪고 있다. 시위자와 민원인들이 청사에 계란과 오물등을 투척, 원상복구에 따른 예산투입을 초래하는가 하면 단체장 면담을 요구하며 청시에 진입하면서 공직 수행 근무자들의 업무에 영향을 끼치는 사례가 빈발하고 있는 것이다. 지난 2일 대전 중구청에는 주거환경개선 사업에 따른 용두동 철거 주민들이 중구청사에 오물을 투척하는 사건이 발생해 출근한 구청직원들은 청사 외벽과 바닥에 뿌려진 오물을 닦아내야 하는 불편을 겪었다. 이에 앞서 지난달 20일과 27일에는 관저동 구봉마을 7단지 주민 40~50여명이 서구청에 몰려와 단지인근에서 불법영업하는 노점상들로 인해 생활에 불편이 많다며 노점상 단속을 요구하며, 집단행동을 벌이다가 구청장과 면담을 가졌다. 이들 주민들의 집단행동으로 일부 공무원들은 만약의 사태를 대비하느라 업무수행에 지장을 받기도 했다. 집단시위 장소가 된 대전시 청사도 예외는 아니다. 지난 7월 시청사 앞에서 집회 시위를 내고 시위를 하던 용두동 철거민들이 계란 30여개를 청사외벽에 투척해 청사외부에 부착된 화강석 돌이 크게 오염된 바 있다. 당시 자체 물청소와 50만원의 예산을 들여 전문용역업체를 불러 원상복구에 나섰지만 기름을 빨아들이는 돌의 특성상 오염이 가시지 않아 1천500만원의 예산을 투입해 화강석의 피해가 불가피한 상황이다. 시청 관계자는 “자신의 주장을 호소하는 것은 좋지만 시민들의 세금으로 운영되는 공공청 사를 훼손하는 행위는 자제돼야 할 것”이라며 “차후 이같은 일이 발생할 경우 고발 및 구상권을 청구할 계획”이라고 밝혔다.김덕기 기자 dgkim@joongdo.com]]></DataContent>
+				</ContentItem>
+			</NewsComponent>
+			<NewsComponent>
+				<Role FormalName="OriginMain" />
+				<ContentItem>
+					<MediaType FormalName="Text"/>
+					<MimeType FormalName="text/plain" />
+					<DataContent><![CDATA[지자체 공공청사가 각종 시위 등으로 수난을 겪고 있다.
+ 시위자와 민원인들이 청사에 계란과 오물등을 투척, 원상복구에 따른 예산투입을 초래하는가 하면 단체장 면담을 요구하며 청시에 진입하면서 공직 수행 근무자들의 업무에 영향을 끼치는 사례가 빈발하고 있는 것이다.
+ 지난 2일 대전 중구청에는 주거환경개선 사업에 따른 용두동 철거 주민들이 중구청사에 오물을 투척하는 사건이 발생해 출근한 구청직원들은 청사 외벽과 바닥에 뿌려진 오물을 닦아내야 하는 불편을 겪었다.
+ 이에 앞서 지난달 20일과 27일에는 관저동 구봉마을 7단지 주민 40~50여명이 서구청에 몰려와 단지인근에서 불법영업하는 노점상들로 인해 생활에 불편이 많다며 노점상 단속을 요구하며, 집단행동을 벌이다가 구청장과 면담을 가졌다.
+ 이들 주민들의 집단행동으로 일부 공무원들은 만약의 사태를 대비하느라 업무수행에 지장을 받기도 했다.
+ 집단시위 장소가 된 대전시 청사도 예외는 아니다.
+ 지난 7월 시청사 앞에서 집회 시위를 내고 시위를 하던 용두동 철거민들이 계란 30여개를 청사외벽에 투척해 청사외부에 부착된 화강석 돌이 크게 오염된 바 있다.
+ 당시 자체 물청소와 50만원의 예산을 들여 전문용역업체를 불러 원상복구에 나섰지만 기름을 빨아들이는 돌의 특성상 오염이 가시지 않아 1천500만원의 예산을 투입해 화강석의 피해가 불가피한 상황이다.
+ 시청 관계자는 “자신의 주장을 호소하는 것은 좋지만 시민들의 세금으로 운영되는 공공청 사를 훼손하는 행위는 자제돼야 할 것”이라며 “차후 이같은 일이 발생할 경우 고발 및 구상권을 청구할 계획”이라고 밝혔다.
+김덕기 기자 dgkim@joongdo.com]]></DataContent>
+				</ContentItem>
+			</NewsComponent>
+			
+						
+
+        </NewsComponent>
+    </NewsItem>
+</NewsML>

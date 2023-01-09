@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NewsML>
+	<Catalog Href="http://newsml.or.kr/topicset/MasterCatalog.xml" />
+	<NewsEnvelope>
+		<DateAndTime>20211111T000712+0900</DateAndTime>
+	</NewsEnvelope>
+	<NewsItem>
+		<Identification>
+			<NewsIdentifier>
+				<ProviderId>kmib.co.kr</ProviderId>
+				<DateId>20211111</DateId>
+				<NewsItemId>01100201.20211111000712002</NewsItemId>
+				<RevisionId PreviousRevision="0" Update="N">1</RevisionId>
+				<PublicIdentifier>kmib.co.kr:20211111:01100201.20211111000712002:1</PublicIdentifier>
+			</NewsIdentifier>
+		</Identification>
+		<NewsManagement>
+			<NewsItemType FormalName="News" />
+			<FirstCreated>20211111T000712+0900</FirstCreated>
+			<ThisRevisionCreated>20211111T000555+0900</ThisRevisionCreated>
+			<Status FormalName="Usable"/>
+			<StatusWillChange>
+				<FutureStatus FormalName="Usable" />
+				<DateAndTime>20211111T000712+0900</DateAndTime>
+			</StatusWillChange>
+			<Urgency FormalName="6" />
+		</NewsManagement>
+		<NewsComponent>
+			<Role FormalName="Main" />
+			<NewsLines>
+				<HeadLine><![CDATA[10%P 앞선 윤석열, ‘컨벤션 효과’ 유지 관건은 ‘정책’]]></HeadLine>
+								<SubHeadLine><![CDATA[최근 여론조사 李에 9.8%P 앞서 
+지지율 유지 관건은 ‘비전·정책’]]></SubHeadLine>
+				
+								
+				<ByLine>문동성,손재호</ByLine>
+				<DateLine>20211111T000555+0900</DateLine>
+				<CreditLine></CreditLine>
+				<CopyrightLine>Copyright(C) 국민일보. All Right Reserved.</CopyrightLine>
+				<RightsLine></RightsLine>
+				<SeriesLine></SeriesLine>
+				<SlugLine></SlugLine>
+				<KeywordLine></KeywordLine>
+			</NewsLines>
+			<AdministrativeMetadata>
+				<FileName>01100201.20211111000712002.xml</FileName>
+				<Provider>
+					<Comment xml:lang="ko">국민일보</Comment>
+					<Party FormalName="01100201" />
+				</Provider>
+				<Creator>
+					<Party FormalName="001" >
+					<Property FormalName="Name" Value="문동성,손재호" />
+					<Property FormalName="Title" Value="" />
+					<Property FormalName="Post" Value="" />
+					<Property FormalName="Email" Value="theMoon@kmib.co.kr," />
+					<Property FormalName="Blog" Value="" />
+					</Party>
+				</Creator>
+			</AdministrativeMetadata>
+			<DescriptiveMetadata>
+				<Language FormalName="ko" />
+				<Genre FormalName="Current" />
+				<SubjectCode>
+					<Subject FormalName="" />
+					<SubjectMatter FormalName="" />
+					<SubjectDetail FormalName="" />
+				</SubjectCode>
+				<DateLineDate>20211111</DateLineDate>
+				<Location HowPresent="Origin">
+					<Property FormalName="Country" Value="" />
+				</Location>
+			</DescriptiveMetadata>
+			<Metadata>
+				<Property FormalName="PublishDate" Value="20211111" />
+				<Property FormalName="PublisherCode" Value="" />
+				<Property FormalName="PaperEdition" Value="7" />
+				<Property FormalName="PageCategory" Value="정치" />
+				<Property FormalName="PageCategoryId" Value="" />
+				<Property FormalName="PrintingPage" Value="4" />
+				<Property FormalName="PrintingPageNo" Value="0" />
+				<Property FormalName="GenreInfo" Value="" />
+				<Property FormalName="KsOrgan" Value="" />                                                        
+                <Property FormalName="KsCompany" Value="" />                                                        
+                <Property FormalName="KsPeople" Value="" />                                                        
+                <Property FormalName="UciCode" Value="G703:RA101-01100201.20211111000712002:1" />   
+				<Property FormalName="ModifyInfo" Value="" />
+				<Property FormalName="CharacterCounter" Value="1250" />
+				<Property FormalName="NewsItemOrgId" Value="0924217728" />
+				<Property FormalName="LinkPage" Value="http://news.kmib.co.kr/article/view.asp?arcid=0924217728&amp;code=11121100" />
+				<Property FormalName="LinkmPage" Value="" />
+				<Property FormalName="SubjectInfo" Value="정치" />
+				<Property FormalName="SubjectInfo1" Value="정치일반" />
+				<Property FormalName="SubjectInfo2" Value="11121100" />
+				<Property FormalName="SubjectInfo3" Value="" />
+				<Property FormalName="SubjectInfo4" Value="" />
+				<Property FormalName="MapSubjectInfo" Value="" />
+				<Property FormalName="AutoSubjectInfo" Value="정치,선거|정치,국회_정당|" />
+				<Property FormalName="AutoSubjectCode" Value="001000000,001002000|001000000,001004000|" />
+				<Property FormalName="AutoKeywordInfo" Value="대선 후보,대선 정책,대장동,지지율,대장동 의혹,민주당 후보 지지율,윤 후보 측,권성동 후보,민주당 후보,다만 윤 후보 측" />
+				<Property FormalName="Latitude" Value="" />
+				<Property FormalName="Longitude" Value="" />
+				<Property FormalName="PageCoordinate" Value="" />
+				<Property FormalName="GroupCoordinate" Value="" />
+				<Property FormalName="ScrapPage" Value=""/>
+                <Property FormalName="ScrapCategoryId" Value=""/>
+				<Property FormalName="ScrapCoordinate" Value="" />
+				<Property FormalName="ScrapPdfFileName" Value=""/>
+			</Metadata>
+			<NewsComponent>
+				<Role FormalName="Main" />
+				<ContentItem>
+					<MediaType FormalName="Text"/>
+					<MimeType FormalName="text/plain" />
+					<DataContent><![CDATA[윤석열 국민의힘 대선 후보가 최근 여론조사에서 10% 포인트가량 지지율이 상승하는 등 ‘컨벤션 효과’를 톡톡히 누리고 있다. 윤 후보 입장에선 이런 상승세를 유지하는 것이 최대 과제가 됐다. 
+ 
+국민의힘 의원들과 정치 전문가들은 “이제는 윤 후보가 정책 비전과 수권 능력을 보여줘야 한다”고 입을 모았다. 대장동 개발사업 특혜 의혹에 대한 공세를 이어가는 동시에 정책 대결에서도 밀리지 않아야 한다는 것이다. 
+ 
+여론조사기관 리얼미터는 YTN 의뢰로 지난 8~9일 이틀간 전국 성인 남녀 1030명을 대상으로 대선주자 지지도 조사를 실시한 결과, 윤 후보가 44.4%를 기록했다고 10일 밝혔다. 이재명 더불어민주당 후보 지지율은 34.6%로 조사됐다. 두 후보 간 격차는 9.8% 포인트로, 윤 후보가 이 후보를 오차범위 밖에서 따돌렸다(그 밖의 사항은 중앙선거여론조사심의위원회 홈페이지 참조). 
+ 
+윤 후보의 최근 지지율 추세는 대선 경선 전과 확연히 다르다. 윤 후보는 지난 5일 후보로 확정된 이후 실시된 여론조사에서 이 후보를 오차범위 밖에서 앞서고 있다. 
+ 
+윤 후보 측은 최소한 연말까지는 컨벤션 효과를 유지하는 것을 목표로 삼고 있다. 이를 위해서는 대장동 의혹 공세만으로는 어렵다는 게 당 안팎의 평가다. 
+ 
+권성동 후보 비서실장은 국민일보와의 통화에서 “국민들은 이미 내로남불과 부동산 문제, 대장동 의혹 등으로 상처받아 정권교체가 답이라고 생각한다”고 강조했다. 그러면서 “이제 윤 후보가 공정과 상식, 미래에 대한 희망을 주고 진정성을 보이게 되면 지지율은 계속 유지될 것”이라고 설명했다. 
+ 
+윤 후보 측 관계자는 “대장동 의혹만으로 현 지지율을 유지하기는 힘들다”며 “2030 미래 세대들에게 어떤 유의미한 비전과 정책 공약을 제시할 수 있을지 고민하고 있다”고 말했다. 
+ 
+윤태곤 더모아 정치분석실장은 “윤 후보는 정권심판론의 상징과도 같다”면서도 “윤 후보가 갖는 가장 본질적인 문제는 수권 능력이 있다는 인식을 심어줄 수 있느냐의 여부”라고 말했다. 
+ 
+윤 후보는 준비했던 정책들을 상황에 맞게 꺼내들 계획이다. 이미 당 정책위원회와 윤 후보 측 인사들이 대선 정책을 구체화하는 작업에 착수했다고 한다. 
+ 
+다만 윤 후보 측은 이 후보가 직접 제시한 1대 1 정책 토론에 참여할 의사는 없다고 선을 그었다. 국민의힘 소속 한 의원은 “이 후보의 제안은 대장동 의혹 국면을 전환하기 위한 정치적 의도가 있는 것”이라며 “꼼수에 어울려줄 생각은 없다”고 일축했다. 
+ 
+문동성 손재호 기자 theMoon@kmib.co.kr]]></DataContent>
+				</ContentItem>
+			</NewsComponent>
+			<NewsComponent>
+				<Role FormalName="OriginMain" />
+				<ContentItem>
+					<MediaType FormalName="Text"/>
+					<MimeType FormalName="text/plain" />
+					<DataContent><![CDATA[윤석열 국민의힘 대선 후보가 최근 여론조사에서 10% 포인트가량 지지율이 상승하는 등 ‘컨벤션 효과’를 톡톡히 누리고 있다. 윤 후보 입장에선 이런 상승세를 유지하는 것이 최대 과제가 됐다.&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;국민의힘 의원들과 정치 전문가들은 “이제는 윤 후보가 정책 비전과 수권 능력을 보여줘야 한다”고 입을 모았다. 대장동 개발사업 특혜 의혹에 대한 공세를 이어가는 동시에 정책 대결에서도 밀리지 않아야 한다는 것이다.&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;여론조사기관 리얼미터는 YTN 의뢰로 지난 8~9일 이틀간 전국 성인 남녀 1030명을 대상으로 대선주자 지지도 조사를 실시한 결과, 윤 후보가 44.4%를 기록했다고 10일 밝혔다. 이재명 더불어민주당 후보 지지율은 34.6%로 조사됐다. 두 후보 간 격차는 9.8% 포인트로, 윤 후보가 이 후보를 오차범위 밖에서 따돌렸다(그 밖의 사항은 중앙선거여론조사심의위원회 홈페이지 참조).&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;윤 후보의 최근 지지율 추세는 대선 경선 전과 확연히 다르다. 윤 후보는 지난 5일 후보로 확정된 이후 실시된 여론조사에서 이 후보를 오차범위 밖에서 앞서고 있다.&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;윤 후보 측은 최소한 연말까지는 컨벤션 효과를 유지하는 것을 목표로 삼고 있다. 이를 위해서는 대장동 의혹 공세만으로는 어렵다는 게 당 안팎의 평가다.&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;권성동 후보 비서실장은 국민일보와의 통화에서 “국민들은 이미 내로남불과 부동산 문제, 대장동 의혹 등으로 상처받아 정권교체가 답이라고 생각한다”고 강조했다. 그러면서 “이제 윤 후보가 공정과 상식, 미래에 대한 희망을 주고 진정성을 보이게 되면 지지율은 계속 유지될 것”이라고 설명했다.&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;윤 후보 측 관계자는 “대장동 의혹만으로 현 지지율을 유지하기는 힘들다”며 “2030 미래 세대들에게 어떤 유의미한 비전과 정책 공약을 제시할 수 있을지 고민하고 있다”고 말했다.&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;윤태곤 더모아 정치분석실장은 “윤 후보는 정권심판론의 상징과도 같다”면서도 “윤 후보가 갖는 가장 본질적인 문제는 수권 능력이 있다는 인식을 심어줄 수 있느냐의 여부”라고 말했다.&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;윤 후보는 준비했던 정책들을 상황에 맞게 꺼내들 계획이다. 이미 당 정책위원회와 윤 후보 측 인사들이 대선 정책을 구체화하는 작업에 착수했다고 한다.&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;다만 윤 후보 측은 이 후보가 직접 제시한 1대 1 정책 토론에 참여할 의사는 없다고 선을 그었다. 국민의힘 소속 한 의원은 “이 후보의 제안은 대장동 의혹 국면을 전환하기 위한 정치적 의도가 있는 것”이라며 “꼼수에 어울려줄 생각은 없다”고 일축했다.&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;문동성 손재호 기자 theMoon@kmib.co.kr&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;GoodNews paper ⓒ &amp;lt;a href=&quot;http://www.kmib.co.kr&quot; target=&quot;_blank&quot;&amp;gt;국민일보(www.kmib.co.kr)&amp;lt;/a&amp;gt;, 무단전재 및 수집, 재배포금지]]></DataContent>
+				</ContentItem>
+			</NewsComponent>
+			
+						
+			<NewsComponent>
+				<Role FormalName="Photo" />
+				<NewsComponent>
+					<Role FormalName="Preview" />
+					<ContentItem Href="01100201.20211111000712002.01.jpg">
+						<MediaType FormalName="Photo" />
+												<Format FormalName="JPEG Baseline" />
+						<MimeType FormalName="image/jpeg" />
+												<Characteristics>
+							<PhotoItemId></PhotoItemId>
+							<SizeInBytes>17880</SizeInBytes>
+							<Property FormalName="Width" Value="500" />
+							<Property FormalName="Height" Value="333" />
+							<Property FormalName="ColorSpace" Value="" />
+							<Property FormalName="ICCProfile" Value="" />
+						</Characteristics>
+					</ContentItem>
+				</NewsComponent>
+				<NewsComponent>
+					<Role FormalName="Caption" />
+					<ContentItem>
+						<MediaType FormalName="Text" />
+						<MimeType FormalName="text/plain" />
+						<DataContent>
+						<![CDATA[]]>
+						</DataContent>
+					</ContentItem>
+				</NewsComponent>
+			</NewsComponent>
+
+        </NewsComponent>
+    </NewsItem>
+</NewsML>

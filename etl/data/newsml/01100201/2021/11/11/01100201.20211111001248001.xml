@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NewsML>
+	<Catalog Href="http://newsml.or.kr/topicset/MasterCatalog.xml" />
+	<NewsEnvelope>
+		<DateAndTime>20211111T001248+0900</DateAndTime>
+	</NewsEnvelope>
+	<NewsItem>
+		<Identification>
+			<NewsIdentifier>
+				<ProviderId>kmib.co.kr</ProviderId>
+				<DateId>20211111</DateId>
+				<NewsItemId>01100201.20211111001248001</NewsItemId>
+				<RevisionId PreviousRevision="0" Update="N">1</RevisionId>
+				<PublicIdentifier>kmib.co.kr:20211111:01100201.20211111001248001:1</PublicIdentifier>
+			</NewsIdentifier>
+		</Identification>
+		<NewsManagement>
+			<NewsItemType FormalName="News" />
+			<FirstCreated>20211111T001248+0900</FirstCreated>
+			<ThisRevisionCreated>20211111T001144+0900</ThisRevisionCreated>
+			<Status FormalName="Usable"/>
+			<StatusWillChange>
+				<FutureStatus FormalName="Usable" />
+				<DateAndTime>20211111T001248+0900</DateAndTime>
+			</StatusWillChange>
+			<Urgency FormalName="6" />
+		</NewsManagement>
+		<NewsComponent>
+			<Role FormalName="Main" />
+			<NewsLines>
+				<HeadLine><![CDATA[런던에 ‘래리’가 있다면, 대구엔 ‘두삼이’가 있다]]></HeadLine>
+								<SubHeadLine><![CDATA[대구 두류3동, 길고양이 구조 후 명예 사회복지공무원에 임명 
+“직원과 주민에게 큰 즐거움과 위로 준 공로 인정”]]></SubHeadLine>
+				
+								
+				<ByLine>노혜진</ByLine>
+				<DateLine>20211111T001144+0900</DateLine>
+				<CreditLine></CreditLine>
+				<CopyrightLine>Copyright(C) 국민일보. All Right Reserved.</CopyrightLine>
+				<RightsLine></RightsLine>
+				<SeriesLine></SeriesLine>
+				<SlugLine></SlugLine>
+				<KeywordLine></KeywordLine>
+			</NewsLines>
+			<AdministrativeMetadata>
+				<FileName>01100201.20211111001248001.xml</FileName>
+				<Provider>
+					<Comment xml:lang="ko">국민일보</Comment>
+					<Party FormalName="01100201" />
+				</Provider>
+				<Creator>
+					<Party FormalName="001" >
+					<Property FormalName="Name" Value="노혜진" />
+					<Property FormalName="Title" Value="" />
+					<Property FormalName="Post" Value="" />
+					<Property FormalName="Email" Value="" />
+					<Property FormalName="Blog" Value="" />
+					</Party>
+				</Creator>
+			</AdministrativeMetadata>
+			<DescriptiveMetadata>
+				<Language FormalName="ko" />
+				<Genre FormalName="Current" />
+				<SubjectCode>
+					<Subject FormalName="" />
+					<SubjectMatter FormalName="" />
+					<SubjectDetail FormalName="" />
+				</SubjectCode>
+				<DateLineDate>20211111</DateLineDate>
+				<Location HowPresent="Origin">
+					<Property FormalName="Country" Value="" />
+				</Location>
+			</DescriptiveMetadata>
+			<Metadata>
+				<Property FormalName="PublishDate" Value="20211111" />
+				<Property FormalName="PublisherCode" Value="" />
+				<Property FormalName="PaperEdition" Value="" />
+				<Property FormalName="PageCategory" Value="" />
+				<Property FormalName="PageCategoryId" Value="" />
+				<Property FormalName="PrintingPage" Value="" />
+				<Property FormalName="PrintingPageNo" Value="0" />
+				<Property FormalName="GenreInfo" Value="" />
+				<Property FormalName="KsOrgan" Value="" />                                                        
+                <Property FormalName="KsCompany" Value="" />                                                        
+                <Property FormalName="KsPeople" Value="" />                                                        
+                <Property FormalName="UciCode" Value="G703:RA101-01100201.20211111001248001:1" />   
+				<Property FormalName="ModifyInfo" Value="" />
+				<Property FormalName="CharacterCounter" Value="842" />
+				<Property FormalName="NewsItemOrgId" Value="0016455512" />
+				<Property FormalName="LinkPage" Value="http://news.kmib.co.kr/article/view.asp?arcid=0016455512&amp;code=61121111&amp;cp=kd" />
+				<Property FormalName="LinkmPage" Value="" />
+				<Property FormalName="SubjectInfo" Value="사회" />
+				<Property FormalName="SubjectInfo1" Value="사회일반" />
+				<Property FormalName="SubjectInfo2" Value="61121111" />
+				<Property FormalName="SubjectInfo3" Value="" />
+				<Property FormalName="SubjectInfo4" Value="" />
+				<Property FormalName="MapSubjectInfo" Value="" />
+				<Property FormalName="AutoSubjectInfo" Value="지역,대구|지역,충북|지역,경남" />
+				<Property FormalName="AutoSubjectCode" Value="006000000,006006000|006000000,006014000|006000000,006003000" />
+				<Property FormalName="AutoKeywordInfo" Value="두삼이,두류3동,길고양이 두삼이,두류,길고양이,래리,대구,고양,공무원 래리,바로 두류3동" />
+				<Property FormalName="Latitude" Value="" />
+				<Property FormalName="Longitude" Value="" />
+				<Property FormalName="PageCoordinate" Value="" />
+				<Property FormalName="GroupCoordinate" Value="" />
+				<Property FormalName="ScrapPage" Value=""/>
+                <Property FormalName="ScrapCategoryId" Value=""/>
+				<Property FormalName="ScrapCoordinate" Value="" />
+				<Property FormalName="ScrapPdfFileName" Value=""/>
+			</Metadata>
+			<NewsComponent>
+				<Role FormalName="Main" />
+				<ContentItem>
+					<MediaType FormalName="Text"/>
+					<MimeType FormalName="text/plain" />
+					<DataContent><![CDATA[대구의 한 재건축 철거촌에서 구조된 길고양이가 명예 사회복지 공무원에 임명됐다. 
+ 
+대구 달서구는 10일 두류3동 행정복지센터 화단에 상주하는 길고양이 ‘두삼이’를 명예 사회복지 공무원으로 임명했다고 밝혔다. 
+ 
+임명식은 두삼이의 얼굴이 새겨진 팻말과 두류3동 지역사회보장 협의체, 대구 길고양이보호협회와의 기념촬영 순으로 진행됐다. 
+ 
+두삼이는 지난 4월 두류3동 철거촌에서 구조된 6~7세 추정 수컷 고양이다. 구조 이후 구내염 치료와 중성화 수술을 받은 뒤 거리에 방사됐다. 두삼이는 뜻밖의 장소를 새로운 보금자리로 택했는데, 바로 두류3동 행정복지센터의 화단이었다. 
+ 
+두삼이는 두류3동 행정복지센터를 방문하는 민원인과 직원들에게 즐거움을 선사하고 있는 것으로 알려졌다. 김명록 두류3동장은 두삼이를 명예 사회복지 공무원으로 임명하게 된 계기에 대해 “행정복지센터를 찾아온 두삼이가 직원들이 근무를 잘하고 있는지 창문에서 지켜보기도 한다”며 “직원과 주민에게 큰 즐거움과 위로가 돼 공로를 인정해주기로 했다”고 밝혔다. 
+ 
+ 
+이번에 명예 공무원으로 임명되면서 두삼이는 저소득주민 정서적 안정 및 위로, 두류3동 파수꾼, 길고양이 인식 개선을 위한 징검다리 역할, 내방 민원인의 즐거움 선사 및 쥐 잡기, 복지 사각지대 발굴 업무 홍보 등 5가지의 정식 임무를 부여받기도 했다. 
+ 
+ 
+ 
+ 
+국내 뿐만 아니라 해외에서도 동물을 고양이로 임명하는 사례가 있다. 영국 런던에는 두삼이와 비슷한 고양이 공무원 래리(Larry)가 있다. 래리는 수석 수렵보좌관으로, 런던 다우닝가 10번지 총리 관저에서 쥐를 잡는 임무를 맡고 있다. 래리가 맡은 직책은 비공식적이지만 1924년부터 존재했다고 한다. 
+ 
+노혜진 인턴기자]]></DataContent>
+				</ContentItem>
+			</NewsComponent>
+			<NewsComponent>
+				<Role FormalName="OriginMain" />
+				<ContentItem>
+					<MediaType FormalName="Text"/>
+					<MimeType FormalName="text/plain" />
+					<DataContent><![CDATA[&amp;lt;center&amp;gt;&amp;lt;img src=&quot;http://image.kmib.co.kr/online_image/2021/1111/2021111015212996020_1636525289_0016455512.jpg&quot; alt=&quot;명예사회복지공무원으로 임명된 두삼이. 연합뉴스&quot;&amp;gt;&amp;lt;/center&amp;gt;&amp;lt;br&amp;gt;대구의 한 재건축 철거촌에서 구조된 길고양이가 명예 사회복지 공무원에 임명됐다.&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;대구 달서구는 10일 두류3동 행정복지센터 화단에 상주하는 길고양이 ‘두삼이’를 명예 사회복지 공무원으로 임명했다고 밝혔다.&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;임명식은 두삼이의 얼굴이 새겨진 팻말과 두류3동 지역사회보장 협의체, 대구 길고양이보호협회와의 기념촬영 순으로 진행됐다.&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;두삼이는 지난 4월 두류3동 철거촌에서 구조된 6~7세 추정 수컷 고양이다. 구조 이후 구내염 치료와 중성화 수술을 받은 뒤 거리에 방사됐다. 두삼이는 뜻밖의 장소를 새로운 보금자리로 택했는데, 바로 두류3동 행정복지센터의 화단이었다.&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;두삼이는 두류3동 행정복지센터를 방문하는 민원인과 직원들에게 즐거움을 선사하고 있는 것으로 알려졌다. 김명록 두류3동장은 두삼이를 명예 사회복지 공무원으로 임명하게 된 계기에 대해 “행정복지센터를 찾아온 두삼이가 직원들이 근무를 잘하고 있는지 창문에서 지켜보기도 한다”며 “직원과 주민에게 큰 즐거움과 위로가 돼 공로를 인정해주기로 했다”고 밝혔다.&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;&amp;lt;center&amp;gt;&amp;lt;img src=&quot;http://image.kmib.co.kr/online_image/2021/1111/2021111015215696024_1636525316_0016455512.jpg&quot; alt=&quot;연합뉴스&quot;&amp;gt;&amp;lt;/center&amp;gt;&amp;lt;br&amp;gt;이번에 명예 공무원으로 임명되면서 두삼이는 저소득주민 정서적 안정 및 위로, 두류3동 파수꾼, 길고양이 인식 개선을 위한 징검다리 역할, 내방 민원인의 즐거움 선사 및 쥐 잡기, 복지 사각지대 발굴 업무 홍보 등 5가지의 정식 임무를 부여받기도 했다.&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;&amp;lt;center&amp;gt;&amp;lt;img src=&quot;http://image.kmib.co.kr/online_image/2021/1111/2021111015230496027_1636525384_0016455512.png&quot; alt=&quot;런던 다우닝가 10번지 총리 관저실에서 일하는 수석 수렵보좌관 래리. 래리 트위터 캡처&quot;&amp;gt;&amp;lt;/center&amp;gt;&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;국내 뿐만 아니라 해외에서도 동물을 고양이로 임명하는 사례가 있다. 영국 런던에는 두삼이와 비슷한 고양이 공무원 래리(Larry)가 있다. 래리는 수석 수렵보좌관으로, 런던 다우닝가 10번지 총리 관저에서 쥐를 잡는 임무를 맡고 있다. 래리가 맡은 직책은 비공식적이지만 1924년부터 존재했다고 한다.&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;노혜진 인턴기자&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;GoodNews paper ⓒ &amp;lt;a href=&quot;http://www.kmib.co.kr&quot; target=&quot;_blank&quot;&amp;gt;국민일보(www.kmib.co.kr)&amp;lt;/a&amp;gt;, 무단전재 및 수집, 재배포금지]]></DataContent>
+				</ContentItem>
+			</NewsComponent>
+			
+						
+			<NewsComponent>
+				<Role FormalName="Photo" />
+				<NewsComponent>
+					<Role FormalName="Preview" />
+					<ContentItem Href="01100201.20211111001248001.01.jpg">
+						<MediaType FormalName="Photo" />
+												<Format FormalName="JPEG Baseline" />
+						<MimeType FormalName="image/jpeg" />
+												<Characteristics>
+							<PhotoItemId></PhotoItemId>
+							<SizeInBytes>194935</SizeInBytes>
+							<Property FormalName="Width" Value="640" />
+							<Property FormalName="Height" Value="452" />
+							<Property FormalName="ColorSpace" Value="" />
+							<Property FormalName="ICCProfile" Value="" />
+						</Characteristics>
+					</ContentItem>
+				</NewsComponent>
+				<NewsComponent>
+					<Role FormalName="Caption" />
+					<ContentItem>
+						<MediaType FormalName="Text" />
+						<MimeType FormalName="text/plain" />
+						<DataContent>
+						<![CDATA[명예사회복지공무원으로 임명된 두삼이. 연합뉴스]]>
+						</DataContent>
+					</ContentItem>
+				</NewsComponent>
+			</NewsComponent>
+			<NewsComponent>
+				<Role FormalName="Photo" />
+				<NewsComponent>
+					<Role FormalName="Preview" />
+					<ContentItem Href="01100201.20211111001248001.02.jpg">
+						<MediaType FormalName="Photo" />
+												<Format FormalName="JPEG Baseline" />
+						<MimeType FormalName="image/jpeg" />
+												<Characteristics>
+							<PhotoItemId></PhotoItemId>
+							<SizeInBytes>115244</SizeInBytes>
+							<Property FormalName="Width" Value="640" />
+							<Property FormalName="Height" Value="247" />
+							<Property FormalName="ColorSpace" Value="" />
+							<Property FormalName="ICCProfile" Value="" />
+						</Characteristics>
+					</ContentItem>
+				</NewsComponent>
+				<NewsComponent>
+					<Role FormalName="Caption" />
+					<ContentItem>
+						<MediaType FormalName="Text" />
+						<MimeType FormalName="text/plain" />
+						<DataContent>
+						<![CDATA[연합뉴스]]>
+						</DataContent>
+					</ContentItem>
+				</NewsComponent>
+			</NewsComponent>
+			<NewsComponent>
+				<Role FormalName="Photo" />
+				<NewsComponent>
+					<Role FormalName="Preview" />
+					<ContentItem Href="01100201.20211111001248001.03.jpg">
+						<MediaType FormalName="Photo" />
+												<Format FormalName="JPEG Baseline" />
+						<MimeType FormalName="image/jpeg" />
+												<Characteristics>
+							<PhotoItemId></PhotoItemId>
+							<SizeInBytes>328128</SizeInBytes>
+							<Property FormalName="Width" Value="600" />
+							<Property FormalName="Height" Value="526" />
+							<Property FormalName="ColorSpace" Value="" />
+							<Property FormalName="ICCProfile" Value="" />
+						</Characteristics>
+					</ContentItem>
+				</NewsComponent>
+				<NewsComponent>
+					<Role FormalName="Caption" />
+					<ContentItem>
+						<MediaType FormalName="Text" />
+						<MimeType FormalName="text/plain" />
+						<DataContent>
+						<![CDATA[런던 다우닝가 10번지 총리 관저실에서 일하는 수석 수렵보좌관 래리. 래리 트위터 캡처]]>
+						</DataContent>
+					</ContentItem>
+				</NewsComponent>
+			</NewsComponent>
+
+        </NewsComponent>
+    </NewsItem>
+</NewsML>

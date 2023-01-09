@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NewsML>
+	<Catalog Href="http://newsml.or.kr/topicset/MasterCatalog.xml" />
+	<NewsEnvelope>
+		<DateAndTime>20030904T175841+0900</DateAndTime>
+	</NewsEnvelope>
+	<NewsItem>
+		<Identification>
+			<NewsIdentifier>
+				<ProviderId>joongdoilbo.co.kr</ProviderId>
+				<DateId>20030904</DateId>
+				<NewsItemId>01400351.20030904085905018</NewsItemId>
+				<RevisionId PreviousRevision="0" Update="N">1</RevisionId>
+				<PublicIdentifier>joongdoilbo.co.kr:20030904:01400351.20030904085905018:1</PublicIdentifier>
+			</NewsIdentifier>
+		</Identification>
+		<NewsManagement>
+			<NewsItemType FormalName="News" />
+			<FirstCreated>20030904T175841+0900</FirstCreated>
+			<ThisRevisionCreated>20030904T085905+0900</ThisRevisionCreated>
+			<Status FormalName="Usable"/>
+			<StatusWillChange>
+				<FutureStatus FormalName="Usable" />
+				<DateAndTime>20030904T175841+0900</DateAndTime>
+			</StatusWillChange>
+			<Urgency FormalName="5" />
+		</NewsManagement>
+		<NewsComponent>
+			<Role FormalName="Main" />
+			<NewsLines>
+				<HeadLine><![CDATA[지갑분실 허위신고 경찰에 폭력까지]]></HeadLine>
+								<SubHeadLine><![CDATA[]]></SubHeadLine>
+				
+								
+				<ByLine>중도일보</ByLine>
+				<DateLine>20030904T175841+0900</DateLine>
+				<CreditLine></CreditLine>
+				<CopyrightLine>CopyrightⓒJOONGDOILBO Co., Ltd All Right Reserved.</CopyrightLine>
+				<RightsLine></RightsLine>
+				<SeriesLine></SeriesLine>
+				<SlugLine></SlugLine>
+				<KeywordLine></KeywordLine>
+			</NewsLines>
+			<AdministrativeMetadata>
+				<FileName>01400351.20030904085905018.xml</FileName>
+				<Provider>
+					<Comment xml:lang="ko">중도일보</Comment>
+					<Party FormalName="01400351" />
+				</Provider>
+				<Creator>
+					<Party FormalName="001" >
+					<Property FormalName="Name" Value="중도일보" />
+					<Property FormalName="Title" Value="" />
+					<Property FormalName="Post" Value="" />
+					<Property FormalName="Email" Value="webmaster@joongdoilbo.co.kr" />
+					<Property FormalName="Blog" Value="" />
+					</Party>
+				</Creator>
+			</AdministrativeMetadata>
+			<DescriptiveMetadata>
+				<Language FormalName="ko" />
+				<Genre FormalName="Current" />
+				<SubjectCode>
+					<Subject FormalName="" />
+					<SubjectMatter FormalName="" />
+					<SubjectDetail FormalName="" />
+				</SubjectCode>
+				<DateLineDate>20030904</DateLineDate>
+				<Location HowPresent="Origin">
+					<Property FormalName="Country" Value="" />
+				</Location>
+			</DescriptiveMetadata>
+			<Metadata>
+				<Property FormalName="PublishDate" Value="20030904" />
+				<Property FormalName="PublisherCode" Value="" />
+				<Property FormalName="PaperEdition" Value="01" />
+				<Property FormalName="PageCategory" Value="" />
+				<Property FormalName="PageCategoryId" Value="" />
+				<Property FormalName="PrintingPage" Value="004" />
+				<Property FormalName="PrintingPageNo" Value="0" />
+				<Property FormalName="GenreInfo" Value="" />
+				<Property FormalName="KsOrgan" Value="null" />                                                        
+                <Property FormalName="KsCompany" Value="null" />                                                        
+                <Property FormalName="KsPeople" Value="null" />                                                        
+                <Property FormalName="UciCode" Value="G703:RA101-01400351.20030904085905018:1" />   
+				<Property FormalName="ModifyInfo" Value="" />
+				<Property FormalName="CharacterCounter" Value="284" />
+				<Property FormalName="NewsItemOrgId" Value="01400351.20030904109005949" />
+				<Property FormalName="LinkPage" Value="" />
+				<Property FormalName="LinkmPage" Value="" />
+				<Property FormalName="SubjectInfo" Value="사건/사법" />
+				<Property FormalName="SubjectInfo1" Value="" />
+				<Property FormalName="SubjectInfo2" Value="" />
+				<Property FormalName="SubjectInfo3" Value="" />
+				<Property FormalName="SubjectInfo4" Value="" />
+				<Property FormalName="MapSubjectInfo" Value="" />
+				<Property FormalName="AutoSubjectInfo" Value="사회,사건_사고||" />
+				<Property FormalName="AutoSubjectCode" Value="003000000,003006000||" />
+				<Property FormalName="AutoKeywordInfo" Value="다른,경찰조사 결과,경찰조사 결과 4만,허위신고,4만,이미 다른,이미 다른 곳,유통업,공중전화,30대" />
+				<Property FormalName="Latitude" Value="" />
+				<Property FormalName="Longitude" Value="" />
+				<Property FormalName="PageCoordinate" Value="" />
+				<Property FormalName="GroupCoordinate" Value="" />
+				<Property FormalName="ScrapPage" Value=""/>
+                <Property FormalName="ScrapCategoryId" Value=""/>
+				<Property FormalName="ScrapCoordinate" Value="" />
+				<Property FormalName="ScrapPdfFileName" Value=""/>
+			</Metadata>
+			<NewsComponent>
+				<Role FormalName="Main" />
+				<ContentItem>
+					<MediaType FormalName="Text"/>
+					<MimeType FormalName="text/plain" />
+					<DataContent><![CDATA[다른데서 지갑을 잃어버린 뒤 지갑을 택시에 두고 내렸다고 경찰에 허위신고하고 출동한 경찰에게 폭력까지 휘두른 ‘우격다짐형’ 30대가 붙잡혔는데. 2일 오전 6시 45분께 박모(39·유통업)씨는 귀가 중 공중전화를 이용, l12에 전화를 걸어 “70만원이 들어 있는 지갑을 택시에 두고 내렸다”고 허위신고. 박씨는 출동한 경찰에게 지갑을 빨리 찾아주지 않는다는 이유로 폭력까지 휘둘러 10일간의 상해를 입혔으나 경찰조사 결과 4만원이 든 지갑을 이미 다른 곳에서 잃어버린 뒤 이같은 짓을 저지른 것으로 드러나.]]></DataContent>
+				</ContentItem>
+			</NewsComponent>
+			<NewsComponent>
+				<Role FormalName="OriginMain" />
+				<ContentItem>
+					<MediaType FormalName="Text"/>
+					<MimeType FormalName="text/plain" />
+					<DataContent><![CDATA[다른데서 지갑을 잃어버린 뒤 지갑을 택시에 두고 내렸다고 경찰에 허위신고하고 출동한 경찰에게 폭력까지 휘두른 ‘우격다짐형’ 30대가 붙잡혔는데. 
+2일 오전 6시 45분께 박모(39·유통업)씨는 귀가 중 공중전화를 이용, l12에 전화를 걸어 “70만원이 들어 있는 지갑을 택시에 두고 내렸다”고 허위신고. 박씨는 출동한 경찰에게 지갑을 빨리 찾아주지 않는다는 이유로 폭력까지 휘둘러 10일간의 상해를 입혔으나 경찰조사 결과 4만원이 든 지갑을 이미 다른 곳에서 잃어버린 뒤 이같은 짓을 저지른 것으로 드러나.]]></DataContent>
+				</ContentItem>
+			</NewsComponent>
+			
+						
+
+        </NewsComponent>
+    </NewsItem>
+</NewsML>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NewsML>
+	<Catalog Href="http://newsml.or.kr/topicset/MasterCatalog.xml" />
+	<NewsEnvelope>
+		<DateAndTime>20030904T175841+0900</DateAndTime>
+	</NewsEnvelope>
+	<NewsItem>
+		<Identification>
+			<NewsIdentifier>
+				<ProviderId>joongdoilbo.co.kr</ProviderId>
+				<DateId>20030904</DateId>
+				<NewsItemId>01400351.20030904085905022</NewsItemId>
+				<RevisionId PreviousRevision="0" Update="N">1</RevisionId>
+				<PublicIdentifier>joongdoilbo.co.kr:20030904:01400351.20030904085905022:1</PublicIdentifier>
+			</NewsIdentifier>
+		</Identification>
+		<NewsManagement>
+			<NewsItemType FormalName="News" />
+			<FirstCreated>20030904T175841+0900</FirstCreated>
+			<ThisRevisionCreated>20030904T085905+0900</ThisRevisionCreated>
+			<Status FormalName="Usable"/>
+			<StatusWillChange>
+				<FutureStatus FormalName="Usable" />
+				<DateAndTime>20030904T175841+0900</DateAndTime>
+			</StatusWillChange>
+			<Urgency FormalName="5" />
+		</NewsManagement>
+		<NewsComponent>
+			<Role FormalName="Main" />
+			<NewsLines>
+				<HeadLine><![CDATA[따로 사는 부모 늘였다]]></HeadLine>
+								<SubHeadLine><![CDATA[]]></SubHeadLine>
+				
+								
+				<ByLine>중도일보</ByLine>
+				<DateLine>20030904T175841+0900</DateLine>
+				<CreditLine></CreditLine>
+				<CopyrightLine>CopyrightⓒJOONGDOILBO Co., Ltd All Right Reserved.</CopyrightLine>
+				<RightsLine></RightsLine>
+				<SeriesLine></SeriesLine>
+				<SlugLine></SlugLine>
+				<KeywordLine></KeywordLine>
+			</NewsLines>
+			<AdministrativeMetadata>
+				<FileName>01400351.20030904085905022.xml</FileName>
+				<Provider>
+					<Comment xml:lang="ko">중도일보</Comment>
+					<Party FormalName="01400351" />
+				</Provider>
+				<Creator>
+					<Party FormalName="001" >
+					<Property FormalName="Name" Value="중도일보" />
+					<Property FormalName="Title" Value="" />
+					<Property FormalName="Post" Value="" />
+					<Property FormalName="Email" Value="webmaster@joongdoilbo.co.kr" />
+					<Property FormalName="Blog" Value="" />
+					</Party>
+				</Creator>
+			</AdministrativeMetadata>
+			<DescriptiveMetadata>
+				<Language FormalName="ko" />
+				<Genre FormalName="Current" />
+				<SubjectCode>
+					<Subject FormalName="" />
+					<SubjectMatter FormalName="" />
+					<SubjectDetail FormalName="" />
+				</SubjectCode>
+				<DateLineDate>20030904</DateLineDate>
+				<Location HowPresent="Origin">
+					<Property FormalName="Country" Value="" />
+				</Location>
+			</DescriptiveMetadata>
+			<Metadata>
+				<Property FormalName="PublishDate" Value="20030904" />
+				<Property FormalName="PublisherCode" Value="" />
+				<Property FormalName="PaperEdition" Value="01" />
+				<Property FormalName="PageCategory" Value="" />
+				<Property FormalName="PageCategoryId" Value="" />
+				<Property FormalName="PrintingPage" Value="005" />
+				<Property FormalName="PrintingPageNo" Value="0" />
+				<Property FormalName="GenreInfo" Value="" />
+				<Property FormalName="KsOrgan" Value="null" />                                                        
+                <Property FormalName="KsCompany" Value="null" />                                                        
+                <Property FormalName="KsPeople" Value="null" />                                                        
+                <Property FormalName="UciCode" Value="G703:RA101-01400351.20030904085905022:1" />   
+				<Property FormalName="ModifyInfo" Value="" />
+				<Property FormalName="CharacterCounter" Value="809" />
+				<Property FormalName="NewsItemOrgId" Value="01400351.20030904109005953" />
+				<Property FormalName="LinkPage" Value="" />
+				<Property FormalName="LinkmPage" Value="" />
+				<Property FormalName="SubjectInfo" Value="인간적 흥미" />
+				<Property FormalName="SubjectInfo1" Value="" />
+				<Property FormalName="SubjectInfo2" Value="" />
+				<Property FormalName="SubjectInfo3" Value="" />
+				<Property FormalName="SubjectInfo4" Value="" />
+				<Property FormalName="MapSubjectInfo" Value="" />
+				<Property FormalName="AutoSubjectInfo" Value="사회,여성|국제,국제일반|" />
+				<Property FormalName="AutoSubjectCode" Value="003000000,003002000|005000000,005009000|" />
+				<Property FormalName="AutoKeywordInfo" Value="따로,이갑숙,부양자중 가족,가사 분담,하고,2일 이갑숙,1년 동안 대전지역 여성들,2일 이갑숙 대전시여성정책위원회 연구위원,딸들,주로 하고" />
+				<Property FormalName="Latitude" Value="" />
+				<Property FormalName="Longitude" Value="" />
+				<Property FormalName="PageCoordinate" Value="" />
+				<Property FormalName="GroupCoordinate" Value="" />
+				<Property FormalName="ScrapPage" Value=""/>
+                <Property FormalName="ScrapCategoryId" Value=""/>
+				<Property FormalName="ScrapCoordinate" Value="" />
+				<Property FormalName="ScrapPdfFileName" Value=""/>
+			</Metadata>
+			<NewsComponent>
+				<Role FormalName="Main" />
+				<ContentItem>
+					<MediaType FormalName="Text"/>
+					<MimeType FormalName="text/plain" />
+					<DataContent><![CDATA[가족과 같이 사는 부모는 감소한 반면 따로 사는 부모는 늘어난 것으로 나타났다. 이같은 결과는 2일 이갑숙 대전시여성정책위원회 연구위원이 지난해 1년 동안 대전지역 여성들을 대상으로 벌인 ‘대전여성사회통계 조사’ 논문집을 통해 발표됐다. 연구 결과에 따르면 ‘가족과 같이 사는 경우’가 지난해 39.7%, 따로 사는 경우는 60.3%로 나타났다. 5년전과 비교할 때 ‘가족과 같이 사는 부모’는 l3.2%P 감소한 반면 ‘따로 사는 경우는24.4%P 증가했다. 또 여성은 남성보다 가족과 동거하는 비율이 3.2%P 낮고, 따로 사는 경우는 3.2% 높게 나타났다. 부모의 생계 및 부양에 대해서는 부양자중 ‘가족의 비중’은 낮아진 반면 ‘스스로 해결’은 높아졌다. 지난해의 경우 ‘가족’이 51.6%로 5년전 55.6%보다 4.0%P 감소했으며 ‘스스로 해결’은 48.4%로 1998년 44.4%보다 4.0%P 증가했다. 부모를 모시는 것도 ‘장남’ 이 19.2%, ‘아들들’ 13.2%, ‘아들과 딸들’이 13.2%로 ‘장남’의 비중은 낮아지고 ‘아들과 딸들’의 비중은 높아졌다. 가사 분담에 대해서는 ‘가사는 부인이 주로 하고 남편도 분담해야 한다’는 비율이 58.2%, ‘공평하게 분담해야 한다’가 32.1%로 나타났다. 또 결혼에 찬성하는 사람은 60.6%, 반대하는 사람은 2.3%로 나타났다. 이혼에 대해서는 52.5%가 반대하고, 중립적인 견해는 38.5%, 이혼에 찬성하는 사람은 7.5%였다. 재혼에 대해서는 10명중 5명이 상황에 따라 유동적인 자세를 취하고 있었고 남성이 여성보다 결혼·재혼에 긍정적인 것으로 나타났다.／황성일]]></DataContent>
+				</ContentItem>
+			</NewsComponent>
+			<NewsComponent>
+				<Role FormalName="OriginMain" />
+				<ContentItem>
+					<MediaType FormalName="Text"/>
+					<MimeType FormalName="text/plain" />
+					<DataContent><![CDATA[가족과 같이 사는 부모는 감소한 반면 따로 사는 부모는 늘어난 것으로 나타났다.
+ 이같은 결과는 2일 이갑숙 대전시여성정책위원회 연구위원이 지난해 1년 동안 대전지역 여성들을 대상으로 벌인 ‘대전여성사회통계 조사’ 논문집을 통해 발표됐다.
+ 연구 결과에 따르면 ‘가족과 같이 사는 경우’가 지난해 39.7%, 따로 사는 경우는 60.3%로 나타났다.
+ 5년전과 비교할 때 ‘가족과 같이 사는 부모’는 l3.2%P 감소한 반면 ‘따로 사는 경우는24.4%P 증가했다.
+ 또 여성은 남성보다 가족과 동거하는 비율이 3.2%P 낮고, 따로 사는 경우는 3.2% 높게 나타났다.
+ 부모의 생계 및 부양에 대해서는 부양자중 ‘가족의 비중’은 낮아진 반면 ‘스스로 해결’은 높아졌다.
+ 지난해의 경우 ‘가족’이 51.6%로 5년전 55.6%보다 4.0%P 감소했으며 ‘스스로 해결’은 48.4%로 1998년 44.4%보다 4.0%P 증가했다.
+ 부모를 모시는 것도 ‘장남’ 이 19.2%, ‘아들들’ 13.2%, ‘아들과 딸들’이 13.2%로 ‘장남’의 비중은 낮아지고 ‘아들과 딸들’의 비중은 높아졌다.
+ 가사 분담에 대해서는 ‘가사는 부인이 주로 하고 남편도 분담해야 한다’는 비율이 58.2%, ‘공평하게 분담해야 한다’가 32.1%로 나타났다.
+ 또 결혼에 찬성하는 사람은 60.6%, 반대하는 사람은 2.3%로 나타났다.
+ 이혼에 대해서는 52.5%가 반대하고, 중립적인 견해는 38.5%, 이혼에 찬성하는 사람은 7.5%였다.
+ 재혼에 대해서는 10명중 5명이 상황에 따라 유동적인 자세를 취하고 있었고 남성이 여성보다 결혼·재혼에 긍정적인 것으로 나타났다.
+／황성일]]></DataContent>
+				</ContentItem>
+			</NewsComponent>
+			
+						
+
+        </NewsComponent>
+    </NewsItem>
+</NewsML>

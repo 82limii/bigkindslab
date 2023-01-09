@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NewsML>
+	<Catalog Href="http://newsml.or.kr/topicset/MasterCatalog.xml" />
+	<NewsEnvelope>
+		<DateAndTime>20030904T175841+0900</DateAndTime>
+	</NewsEnvelope>
+	<NewsItem>
+		<Identification>
+			<NewsIdentifier>
+				<ProviderId>joongdoilbo.co.kr</ProviderId>
+				<DateId>20030904</DateId>
+				<NewsItemId>01400351.20030904085905015</NewsItemId>
+				<RevisionId PreviousRevision="0" Update="N">1</RevisionId>
+				<PublicIdentifier>joongdoilbo.co.kr:20030904:01400351.20030904085905015:1</PublicIdentifier>
+			</NewsIdentifier>
+		</Identification>
+		<NewsManagement>
+			<NewsItemType FormalName="News" />
+			<FirstCreated>20030904T175841+0900</FirstCreated>
+			<ThisRevisionCreated>20030904T085905+0900</ThisRevisionCreated>
+			<Status FormalName="Usable"/>
+			<StatusWillChange>
+				<FutureStatus FormalName="Usable" />
+				<DateAndTime>20030904T175841+0900</DateAndTime>
+			</StatusWillChange>
+			<Urgency FormalName="5" />
+		</NewsManagement>
+		<NewsComponent>
+			<Role FormalName="Main" />
+			<NewsLines>
+				<HeadLine><![CDATA[선물 안받고 안주기 운동]]></HeadLine>
+								<SubHeadLine><![CDATA[]]></SubHeadLine>
+				
+								
+				<ByLine>김덕기</ByLine>
+				<DateLine>20030904T175841+0900</DateLine>
+				<CreditLine></CreditLine>
+				<CopyrightLine>CopyrightⓒJOONGDOILBO Co., Ltd All Right Reserved.</CopyrightLine>
+				<RightsLine></RightsLine>
+				<SeriesLine></SeriesLine>
+				<SlugLine></SlugLine>
+				<KeywordLine></KeywordLine>
+			</NewsLines>
+			<AdministrativeMetadata>
+				<FileName>01400351.20030904085905015.xml</FileName>
+				<Provider>
+					<Comment xml:lang="ko">중도일보</Comment>
+					<Party FormalName="01400351" />
+				</Provider>
+				<Creator>
+					<Party FormalName="001" >
+					<Property FormalName="Name" Value="김덕기" />
+					<Property FormalName="Title" Value="" />
+					<Property FormalName="Post" Value="" />
+					<Property FormalName="Email" Value="dgkim@joongdo.com" />
+					<Property FormalName="Blog" Value="" />
+					</Party>
+				</Creator>
+			</AdministrativeMetadata>
+			<DescriptiveMetadata>
+				<Language FormalName="ko" />
+				<Genre FormalName="Current" />
+				<SubjectCode>
+					<Subject FormalName="" />
+					<SubjectMatter FormalName="" />
+					<SubjectDetail FormalName="" />
+				</SubjectCode>
+				<DateLineDate>20030904</DateLineDate>
+				<Location HowPresent="Origin">
+					<Property FormalName="Country" Value="" />
+				</Location>
+			</DescriptiveMetadata>
+			<Metadata>
+				<Property FormalName="PublishDate" Value="20030904" />
+				<Property FormalName="PublisherCode" Value="" />
+				<Property FormalName="PaperEdition" Value="01" />
+				<Property FormalName="PageCategory" Value="" />
+				<Property FormalName="PageCategoryId" Value="" />
+				<Property FormalName="PrintingPage" Value="003" />
+				<Property FormalName="PrintingPageNo" Value="0" />
+				<Property FormalName="GenreInfo" Value="" />
+				<Property FormalName="KsOrgan" Value="null" />                                                        
+                <Property FormalName="KsCompany" Value="null" />                                                        
+                <Property FormalName="KsPeople" Value="null" />                                                        
+                <Property FormalName="UciCode" Value="G703:RA101-01400351.20030904085905015:1" />   
+				<Property FormalName="ModifyInfo" Value="" />
+				<Property FormalName="CharacterCounter" Value="509" />
+				<Property FormalName="NewsItemOrgId" Value="01400351.20030904109005946" />
+				<Property FormalName="LinkPage" Value="" />
+				<Property FormalName="LinkmPage" Value="" />
+				<Property FormalName="SubjectInfo" Value="인간적 흥미" />
+				<Property FormalName="SubjectInfo1" Value="" />
+				<Property FormalName="SubjectInfo2" Value="" />
+				<Property FormalName="SubjectInfo3" Value="" />
+				<Property FormalName="SubjectInfo4" Value="" />
+				<Property FormalName="MapSubjectInfo" Value="" />
+				<Property FormalName="AutoSubjectInfo" Value="지역,지역일반|사회,사회일반|" />
+				<Property FormalName="AutoSubjectCode" Value="006000000,006015000|003000000,003010000|" />
+				<Property FormalName="AutoKeywordInfo" Value="명절 선물,직장협,명절 떡값 선물,내고 명절 선물,명절 떡값,주기 운동,내고 명절,이날 명절,선물 공여,이날 명절 떡값" />
+				<Property FormalName="Latitude" Value="" />
+				<Property FormalName="Longitude" Value="" />
+				<Property FormalName="PageCoordinate" Value="" />
+				<Property FormalName="GroupCoordinate" Value="" />
+				<Property FormalName="ScrapPage" Value=""/>
+                <Property FormalName="ScrapCategoryId" Value=""/>
+				<Property FormalName="ScrapCoordinate" Value="" />
+				<Property FormalName="ScrapPdfFileName" Value=""/>
+			</Metadata>
+			<NewsComponent>
+				<Role FormalName="Main" />
+				<ContentItem>
+					<MediaType FormalName="Text"/>
+					<MimeType FormalName="text/plain" />
+					<DataContent><![CDATA[염홍철 대전시장이 최근 명절을 앞두고 공직기강 확립에 나선 가운데 대전시 공무원직장협의회도 명절 선물 안받고 안주기 운동에 적극 나섰다. 대전시청 공무원직장협의회는 3일 성명을 내고 명절 선물 안 받고 안 주기 운동을 펼친다고 밝혔다. 직장협은 이날 ‘명절 떡값과 선물 공여 행사가 온정의 차원을 넘어 공직사회가 부정부패 집단으로 오인되는 등 사회 전반의 병폐로 연결돼 왔다“며 “공직 내부의 잘못된 관행을 타파하고 진정한 시민의 봉사자로서 거듭 태어나기 위해 명절 떡값 선물 안 받고 안 주기 운동을 전개한다”고 선언했다. 직장협은 이를 위해 ▲업무를 빙자한 일체의 선물이나 금품수수 금지 ▲직장 내 상·하 간 일체의 선물이나 금품은 안 받고 안 주기 운동 생활화 ▲과소비 지양과 검소한 명절의 기쁨을 불우이웃과 합께 하기 등을 강조했다. 직장협은 이어 “앞으로 이와 관련한 부당한 사례는 진상을 조사하고 그 결과를 회원 여러분에게 널리 공지할 것”이라고 덧붙였다.김덕기 기자 dgkim@joongdo.com]]></DataContent>
+				</ContentItem>
+			</NewsComponent>
+			<NewsComponent>
+				<Role FormalName="OriginMain" />
+				<ContentItem>
+					<MediaType FormalName="Text"/>
+					<MimeType FormalName="text/plain" />
+					<DataContent><![CDATA[염홍철 대전시장이 최근 명절을 앞두고 공직기강 확립에 나선 가운데 대전시 공무원직장협의회도 명절 선물 안받고 안주기 운동에 적극 나섰다.
+ 대전시청 공무원직장협의회는 3일 성명을 내고 명절 선물 안 받고 안 주기 운동을 펼친다고 밝혔다.
+ 직장협은 이날 ‘명절 떡값과 선물 공여 행사가 온정의 차원을 넘어 공직사회가 부정부패 집단으로 오인되는 등 사회 전반의 병폐로 연결돼 왔다“며 “공직 내부의 잘못된 관행을 타파하고 진정한 시민의 봉사자로서 거듭 태어나기 위해 명절 떡값 선물 안 받고 안 주기 운동을 전개한다”고 선언했다.
+ 직장협은 이를 위해 ▲업무를 빙자한 일체의 선물이나 금품수수 금지 ▲직장 내 상·하 간 일체의 선물이나 금품은 안 받고 안 주기 운동 생활화 ▲과소비 지양과 검소한 명절의 기쁨을 불우이웃과 합께 하기 등을 강조했다.
+ 직장협은 이어 “앞으로 이와 관련한 부당한 사례는 진상을 조사하고 그 결과를 회원 여러분에게 널리 공지할 것”이라고 덧붙였다.
+김덕기 기자 dgkim@joongdo.com]]></DataContent>
+				</ContentItem>
+			</NewsComponent>
+			
+						
+
+        </NewsComponent>
+    </NewsItem>
+</NewsML>
