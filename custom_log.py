@@ -16,6 +16,8 @@ class Logger:
         # 로그 파일 생성 경로
         if filePath is None:
             self.filePath = "./log/"
+        else:
+            self.filePath = filePath
 
         # 로그 파일 생성 경로 부재 시 생성
         if not os.path.exists(self.filePath):

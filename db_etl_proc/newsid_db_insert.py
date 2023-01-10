@@ -13,6 +13,7 @@ class NewsIdDBBatch:
 
         # 로거 호출
         self.logger = logger
+        self.logger.debug("start time : %s", str(self.start_time))
 
         # MySQL Connection 연결
         mysql_auth = auth_prop.mysql
@@ -28,18 +29,22 @@ class NewsIdDBBatch:
         self.doc_count = 0
         self.total_count = 0
 
+    # type : 일배치, 날짜별 등록, 누락 등록(날짜범위+sort)
+    # range : 날짜 범위
+    # sort : search_after 시작 sort
     def insert_db(self, type, range, sort):
         # elasticsearch 연결
         # 실제서버
-        # host = auth_prop.es
+        host = auth_prop.es
         # 로컬
         # host = 'http://localhost:9199'
-        es = Elasticsearch('http://10.37.29.214:9200', timeout=30, max_retries=10, retry_on_timeout=True)
+        es = Elasticsearch(host, timeout=30, max_retries=10, retry_on_timeout=True)
 
         # 검색 요청 조건
         index = "kpf_bigkindslab_*"
         body = {}
 
+        # 검색 쿼리문 , sort가 0이 아닐 경우 search_after 추가
         if sort == 0:
             body = {
                 "size":1000,
@@ -143,11 +148,11 @@ class NewsIdDBBatch:
 if __name__ == '__main__':
     try:
         # 로거 호출
-        logger = Logger().initLogger()
+        logger = Logger("./newsid_insert_log/").initLogger()
         # 객체 생성
         cls = NewsIdDBBatch(logger)
-        print(sys.argv)
-        if len(sys.argv) == 1:
+
+        if len(sys.argv) <= 1:
             logger.error("옵션값을 입력하세요.")
             exit()
 

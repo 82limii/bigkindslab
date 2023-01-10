@@ -6,10 +6,11 @@ from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 from sentence_transformers import SentenceTransformer
 
-from baikalnlpy import Tagger
+from bareunpy import Tagger
 
 tagger = Tagger()
-model = SentenceTransformer('./kpfSBERT') 
+# model = SentenceTransformer('./kpfSBERT')
+model = SentenceTransformer('D:/Users/user/bigkinds/kpfSBERT')
 
 def keyword_ext(text):
 
