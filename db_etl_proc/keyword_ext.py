@@ -65,6 +65,7 @@ class KeywordExt:
                     text = row[1].replace("<![CDATA[", "").replace("]]>", "")
                     # 키워드 추출
                     res = keyword_ext(text)
+                    params = []
                     for idx, keyword in enumerate(res):
                         # 키워드와 순번 DB insert
                         self.cur.execute(insert_sql, (row[0], str(idx + 1), keyword))
@@ -100,6 +101,7 @@ if __name__ == '__main__':
         logger.info("실행옵션 : " + str(sys.argv))
 
         if sys_param == "batch":
+            logger.info("batch 실행 날짜 : " + str(datetime.today() - timedelta(1))[:10])
             cls.insert_keyword(str(datetime.today() - timedelta(1))[:10])
         elif sys_param == "date_insert":
             # 날짜 입력값 필요, 날짜 형식 2023-01-01으로 입력 필요
