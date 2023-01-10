@@ -23,9 +23,6 @@ class NewsIdDBBatch:
         # Connection 으로부터 Cursor 생성
         self.cur = self.con.cursor()
 
-        # NEWS_MST insert 쿼리 => 해당 pk 있을 경우 ignore
-        self.sql = "INSERT IGNORE INTO ABKL_NEWS_MST(NEWSITEMID, NEWS_CNTS, PUBLISH_DT, PROVIDER_CD) VALUES(%s,%s,%s,%s)"
-
         self.doc_count = 0
         self.total_count = 0
 
@@ -33,6 +30,9 @@ class NewsIdDBBatch:
     # range : 날짜 범위
     # sort : search_after 시작 sort
     def insert_db(self, type, range, sort):
+        # NEWS_MST insert 쿼리 => 해당 pk 있을 경우 ignore
+        sql = "INSERT IGNORE INTO ABKL_NEWS_MST(NEWSITEMID, NEWS_CNTS, PUBLISH_DT, PROVIDER_CD) VALUES(%s,%s,%s,%s)"
+
         # elasticsearch 연결
         # 실제서버
         host = auth_prop.es
@@ -84,16 +84,16 @@ class NewsIdDBBatch:
             }
 
         try:
-            # 검색 결과
             logger.info(body)
+            # 검색 결과
             resp = es.search(index=index, body=body)
 
             # 검색 결과 건수
             self.total_count = resp['hits']['total']['value']
 
             for doc in resp['hits']['hits']:
-                # newsdb_logger.info(doc['_source']['newsItemId'])
-                self.cur.execute(self.sql, (doc['_source']['newsItemId'], doc['_source']['content'], doc['_source']['date'],
+                # 데이터 insert
+                self.cur.execute(sql, (doc['_source']['newsItemId'], doc['_source']['content'], doc['_source']['date'],
                                   doc['_source']['providerCd']))
                 self.con.commit()
                 sort = doc['sort'][0]
@@ -125,8 +125,8 @@ class NewsIdDBBatch:
                 resp = es.search(index=index, body=body)
 
                 for doc in resp['hits']['hits']:
-                    # newsdb_logger.info(doc['_source']['newsItemId'])
-                    self.cur.execute(self.sql, (doc['_source']['newsItemId'], doc['_source']['content'], doc['_source']['date'],
+                    # 데이터 insert
+                    self.cur.execute(sql, (doc['_source']['newsItemId'], doc['_source']['content'], doc['_source']['date'],
                                       doc['_source']['providerCd']))
                     self.con.commit()
                     sort = doc['sort'][0]
@@ -152,6 +152,7 @@ if __name__ == '__main__':
         # 객체 생성
         cls = NewsIdDBBatch(logger)
 
+        # 옵션 입력하지 않을 경우 종료
         if len(sys.argv) <= 1:
             logger.error("옵션값을 입력하세요.")
             exit()
@@ -159,6 +160,7 @@ if __name__ == '__main__':
         # 옵션값 batch, sort_omi, date_insert
         sys_param = sys.argv[1]
         logger.info("실행옵션 : "+str(sys.argv))
+
         if sys_param == 'batch':
             range = {
                 "@timestamp": {
@@ -167,7 +169,7 @@ if __name__ == '__main__':
                 }
             }
             cls.insert_db(sys_param, range, 0)
-        elif sys_param == 'sort_omi':
+        elif sys_param == 'sort_omi': # 날짜와 sort 옵션값 모두 필요
             if len(sys.argv) == 2:
                 logger.error("날짜 옵션값을 입력하세요. ex) 2021-01-04~2021-04-05")
                 exit()
@@ -188,9 +190,8 @@ if __name__ == '__main__':
                 }
                 sort = sys.argv[3]
                 cls.insert_db(sys_param, range, int(sort))
-        elif sys_param == 'date_insert':
-            print(len(sys.argv))
-            if len(sys.argv) != 3:
+        elif sys_param == 'date_insert': # 날짜 옵션값 필요
+            if len(sys.argv) == 2:
                 logger.error("날짜 옵션값을 입력하세요. ex) 2021-01-04~2021-04-05")
                 exit()
             else:
@@ -206,6 +207,7 @@ if __name__ == '__main__':
                     }
                 }
                 cls.insert_db(sys_param, range, 0)
+        # 실행 옵션 이상할 경우
         else:
             logger.error("옵션값을 입력하세요.")
             exit()

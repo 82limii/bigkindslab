@@ -29,24 +29,19 @@ class KeywordExt:
 
     def insert_keyword(self, date):
         try:
-            page_size = 1000  # 한번에 불러올 데이터 수
+            page_size = 1000  # 페이지당 데이터 수
             # 전체 데이터 수 구하기 위한 SQL문
             count_sql = """SELECT COUNT(1)
                 FROM ABKL_NEWS_MST anm
                 WHERE DATE_FORMAT(REGIST_DT, '%%Y-%%m-%%d') = DATE_FORMAT(%s, '%%Y-%%m-%%d')
                     AND NEWS_CNTS != '%%{[contents][0]}'
             """
-
             self.cur.execute(count_sql, date)
-            self.total_count = self.cur.fetchall()[0][0]
-
-            total_page = round(self.total_count / page_size)
+            self.total_count = self.cur.fetchall()[0][0] # 전체 데이터 수
+            total_page = round(self.total_count / page_size) # 전체 페이지 수
 
             for page in range(total_page):
-                # sql=""
-                # cur.excute(page_size, page * page_size)
-
-                # 데이터 불러오기 위한 SQL문
+                # 데이터 불러오기 위한 SQL문 (페이징처리)
                 select_sql = """SELECT NEWSITEMID , NEWS_CNTS
                     FROM ABKL_NEWS_MST anm
                     WHERE DATE_FORMAT(REGIST_DT, '%%Y-%%m-%%d') = DATE_FORMAT(%s, '%%Y-%%m-%%d')
@@ -55,7 +50,6 @@ class KeywordExt:
                     LIMIT %s
                     OFFSET %s
                 """
-
                 self.cur.execute(select_sql, (date, page_size, page * page_size))
 
                 # 데이타 Fetch
@@ -96,6 +90,7 @@ if __name__ == '__main__':
         #객체 생성
         cls = KeywordExt(logger)
 
+        # 옵션 입력하지 않을 경우 종료
         if len(sys.argv) <= 1:
             logger.error("옵션값을 입력하세요.")
             exit()
@@ -111,8 +106,9 @@ if __name__ == '__main__':
             if len(sys.argv) == 2:
                 logger.error("날짜를옵션 값을 입력하세요. ex)2023-01-10")
                 exit()
-            print(sys.argv[2])
+
             cls.insert_keyword(sys.argv[2])
+        # 실행 옵션 이상할 경우
         else:
             logger.error("옵션값을 입력하세요.")
             exit()
