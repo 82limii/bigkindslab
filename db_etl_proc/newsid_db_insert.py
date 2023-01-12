@@ -84,7 +84,7 @@ class NewsIdDBBatch:
             }
 
         try:
-            logger.info(body)
+            self.logger.info(body)
             # 검색 결과
             resp = es.search(index=index, body=body)
 
@@ -98,7 +98,7 @@ class NewsIdDBBatch:
                 self.con.commit()
                 sort = doc['sort'][0]
                 self.doc_count += 1
-                logger.info("newsItemId : " + str(doc['_source']['newsItemId']))
+                self.logger.info("newsItemId : " + str(doc['_source']['newsItemId']))
             # SCROLL API를 통해 나온 결과 저장
             while len(resp['hits']['hits']):
                 # search_after 추가한 검색 결과
@@ -131,7 +131,7 @@ class NewsIdDBBatch:
                     self.con.commit()
                     sort = doc['sort'][0]
                     self.doc_count += 1
-                    logger.info("newsItemId : "+str(doc['_source']['newsItemId']))
+                    self.logger.info("newsItemId : "+str(doc['_source']['newsItemId']))
 
         except Exception as e:  # 에러 처리
             trace_back = traceback.format_exc()

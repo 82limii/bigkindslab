@@ -4,10 +4,10 @@ import auth_prop
 from custom_log import Logger
 import pymysql
 from datetime import datetime, timedelta
-from python_api.keyword_module import keyword_ext
+from python_api.ner4_module import ner_predict
 import traceback
 
-class KeywordExt:
+class NerExt:
     def __init__(self, logger):
         # time check
         self.start_time = time.time()
@@ -29,7 +29,7 @@ class KeywordExt:
         self.cur_page = 0
         self.newsItemId = ""
 
-    def insert_keyword(self, date, start_page=None):
+    def insert_ner(self, date, start_page=None):
         try:
             page_size = 1000  # 페이지당 데이터 수
             # 전체 데이터 수 구하기 위한 SQL문
@@ -64,25 +64,21 @@ class KeywordExt:
                 self.logger.info("SELECT DONE TIME : " + str(time.time() - self.start_time))
 
                 # keyword insert SQL문
-                insert_sql = "INSERT IGNORE INTO ABKL_NEWS_KEYWORD_RESULT(NEWSITEMID, KEYWORD_SEQ, KEYWORD) VALUES(%s,%s,%s)"
+                insert_sql = "INSERT IGNORE INTO ABKL_NEWS_NER_RESULT(NEWSITEMID, NER_SEQ, NER_CD, EXT_WORD) VALUES(%s,%s,%s,%s)"
 
                 for row in rows:
                     self.newsItemId = row[0]
                     # 기사 본문 전처리
                     text = row[1].replace("<![CDATA[","").replace("]]>","").replace("&apos;","\'").replace("&quot;","\"")
-                    # 키워드 추출
-                    res = keyword_ext(text)
-                    if res == 0:
-                        self.insert_count += 1
-                        self.logger.info("newsItemId : " + str(row[0])+"no keyword")
-                    else:
-                        params = []
-                        for idx, keyword in enumerate(res):
-                            # 키워드와 순번 DB insert
-                            self.cur.execute(insert_sql, (row[0], str(idx + 1), keyword))
-                        self.con.commit()
-                        self.insert_count += 1
-                        self.logger.info("newsItemId : "+self.newsItemId)
+                    # 개체명 추출
+                    res = ner_predict(text)
+                    params = []
+                    for idx, ner in enumerate(res):
+                        # 키워드와 순번 DB insert
+                        self.cur.execute(insert_sql, (row[0], str(idx + 1), ner['label'], ner['word']))
+                    self.con.commit()
+                    self.insert_count += 1
+                    self.logger.info("newsItemId : "+self.newsItemId)
 
         except Exception as e:  # 에러 처리
             trace_back = traceback.format_exc()
@@ -100,9 +96,9 @@ class KeywordExt:
 if __name__ == '__main__':
     try:
         # 로거 호출
-        logger = Logger("./keyword_log/").initLogger()
+        logger = Logger("./ner_log/").initLogger()
         #객체 생성
-        cls = KeywordExt(logger)
+        cls = NerExt(logger)
 
         # 옵션 입력하지 않을 경우 종료
         if len(sys.argv) <= 1:
@@ -115,14 +111,14 @@ if __name__ == '__main__':
 
         if sys_param == "batch":
             logger.info("batch 실행 날짜 : " + str(datetime.today() - timedelta(1))[:10])
-            cls.insert_keyword(str(datetime.today() - timedelta(1))[:10])
+            cls.insert_ner(str(datetime.today() - timedelta(1))[:10])
         elif sys_param == "date_insert":
             # 날짜 입력값 필요, 날짜 형식 2023-01-01으로 입력 필요
             if len(sys.argv) == 2:
                 logger.error("날짜를옵션 값을 입력하세요. ex)2023-01-10")
                 exit()
 
-            cls.insert_keyword(sys.argv[2])
+            cls.insert_ner(sys.argv[2])
         elif sys_param == "page_setting":
             # 날짜 입력값 필요, 날짜 형식 2023-01-01으로 입력 필요
             if len(sys.argv) == 2:
@@ -132,7 +128,7 @@ if __name__ == '__main__':
                 logger.error("페이지를 입력하세요.")
                 exit()
 
-            cls.insert_keyword(sys.argv[2], sys.argv[3])
+            cls.insert_ner(sys.argv[2], sys.argv[3])
         # 실행 옵션 이상할 경우
         else:
             logger.error("옵션값을 입력하세요.")

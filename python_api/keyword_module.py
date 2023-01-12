@@ -8,6 +8,7 @@ from sentence_transformers import SentenceTransformer
 
 from bareunpy import Tagger
 
+# tagger = Tagger('10.37.47.161',5656)
 tagger = Tagger()
 # model = SentenceTransformer('./kpfSBERT')
 model = SentenceTransformer('D:/Users/user/bigkinds/kpfSBERT')
@@ -18,7 +19,6 @@ def keyword_ext(text):
     tokenized_nouns = ' '.join([word[0] for word in tokenized_doc if word[1] == 'NNG' or word[1] == 'NNP'])
 
     n_gram_range = (1,1)
-
     count = CountVectorizer(ngram_range=n_gram_range).fit([tokenized_nouns])
     candidates = count.get_feature_names_out()
 
@@ -31,6 +31,8 @@ def mmr(doc_embedding, candidate_embeddings, words, top_n, diversity):
 
     # 문서와 각 키워드들 간의 유사도가 적혀있는 리스트
     word_doc_similarity = cosine_similarity(candidate_embeddings, doc_embedding)
+    if len(word_doc_similarity) < 5:
+        return 0
 
     # 각 키워드들 간의 유사도
     word_similarity = cosine_similarity(candidate_embeddings)
